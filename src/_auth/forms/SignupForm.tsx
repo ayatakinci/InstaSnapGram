@@ -1,9 +1,9 @@
 import React from 'react'
-
-function SignupForm() {
+import { Button } from "@/components/ui/button"
+export default function Home() {
   return (
-    <div>SignupForm</div>
+    <div>
+      <Button>Click me</Button>
+    </div>
   )
 }
-
-export default SignupForm
