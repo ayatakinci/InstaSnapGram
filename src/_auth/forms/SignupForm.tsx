@@ -14,6 +14,7 @@ import {
 import { Input } from "@/components/ui/input"
 import { SignupValidation } from "@/lib/validation"
 import { Loader } from "lucide-react"
+import { createUserAccount } from "@/lib/appwrite/api"
 
 
 
@@ -31,6 +32,7 @@ const SignupForm = () => {
 
   async function onSubmit(values: z.infer<typeof SignupValidation>) {
     const newUser =await createUserAccount(values);
+    console.log(newUser)
   }
   return (
     <Form {...form}>
